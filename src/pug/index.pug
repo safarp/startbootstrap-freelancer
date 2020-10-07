@@ -1,0 +1,471 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Advokátní kancelář - Mgr. Alena Pařízková
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.png')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Advokátní kancelář
+                button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu 
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Služby
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') O kanceláři
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#team') Tým
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Kontakt
+
+        // Masthead
+        header.masthead.bg-primary.text-white.text-center
+            .container.d-flex.align-items-center.flex-column
+                // Masthead Avatar Image
+                img.masthead-avatar.mb-5(src='assets/img/avatar.jpg', alt='')
+                // Masthead Heading
+                h1.masthead-heading.text-uppercase.mb-0 Mgr. Alena Pařízková
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Masthead Subheading
+                p.masthead-subheading.font-weight-light.mb-0 Trestní, rodinné, občanské a právo nemovitostí
+
+        // Portfolio Section
+        section#portfolio.page-section.portfolio
+            .container
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Služby
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Portfolio Grid Items
+                .row
+                    // Portfolio Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal1')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/trestni.jpg', alt='')
+                    // Portfolio Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal2')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/rodinne.jpg', alt='')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/nemovitosti.jpg', alt='')
+                    // Portfolio Item 4
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal4')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/obcanske.jpg', alt='')
+
+        // About Section
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white O kanceláři
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ml-auto
+                        p.lead
+                            | Jsme malou advokátní kanceláří, upřednostňující klienty jako jednotlivce, místo velkých korporátů. O to více však klademe důraz na osobní přístup ke každému klientovi. Svým klientům poskytujeme právní služby a poradenství po celém území České republiky v téměř veškerých oblastech práva. Naše právní služby poskytujeme za velmi příznivé ceny, vždy dbáme na minimalizaci nákladů klienta, které nikdy nejsou vynaloženy bez jeho vědomí.
+                    .col-lg-4.mr-auto
+                        p.lead
+                            | Při poskytování služeb upřednostnujeme osobní kontakt s klientem, jsme však flexibilní a rádi vyjdeme vstříc i komunikaci prostřednictvím komunikačních technologií z pohodlí klientova domova nebo kanceláře.
+                    .col-lg-4.mr-auto
+                        p.lead
+                            | Spolupracujeme s mnoha externími specialisty a dalšími subjekty působícími v právní problematice, zejména se soudními znalci, notáři, soudními exekutory, realitními makléři a jinými. 
+                            br
+                            | Novým klientům nabízíme možnost 1. konzultace zdarma v souvislosti s převzetím jejich složitější věci. Jedná se o jeden právní úkon časově nepřesahující 0,5h.
+                // About Section Button
+                .text-center.mt-4
+                    a.btn.btn-xl.btn-outline-light(href='#contact')
+                        i.fas.fa-mobile.mr-2
+                        | Kontakt
+
+        // Team Section
+        section#team.page-section.portfolio
+            .container
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Tým
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Portfolio Grid Items
+                .row
+                    // Portfolio Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#teamModal1')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/team/alena.jpg', alt='')
+                    // Portfolio Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#teamModal2')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/team/ondrej.jpg', alt='')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#teamModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/team/marta.jpg', alt='')
+
+
+        // Contact Section
+        section#contact.page-section
+            .container
+                // Contact Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Kontakt
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Contact Section Form
+                .row
+                    .col-lg-8.mx-auto
+                        // To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+                        form#contactForm(name='sentMessage', novalidate='novalidate')
+                            .control-group
+                                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                                    label Jméno
+                                    input#name.form-control(type='text', placeholder='Jméno', required='required', data-validation-required-message='Vyplňte jméno.')
+                                    p.help-block.text-danger
+                            .control-group
+                                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                                    label Email
+                                    input#email.form-control(type='email', placeholder='Email', required='required', data-validation-required-message='Vyplňte emailovou adresu.')
+                                    p.help-block.text-danger
+                            .control-group
+                                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                                    label Telefon
+                                    input#phone.form-control(type='tel', placeholder='Telefon', required='required', data-validation-required-message='Vyplňte telefonní číslo.')
+                                    p.help-block.text-danger
+                            .control-group
+                                .form-group.floating-label-form-group.controls.mb-0.pb-2
+                                    label Zpráva
+                                    textarea#message.form-control(rows='5', placeholder='Zpráva', required='required', data-validation-required-message='Vyplňte text zprávy.')
+                                    p.help-block.text-danger
+                            br
+                            #success
+                            .form-group
+                                button#sendMessageButton.btn.btn-primary.btn-xl(type='submit') Odeslat
+
+        // Footer
+        footer.footer.text-center
+            .container
+                .row
+                    // Footer Location
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Adresa
+                        p.lead.mb-0
+                            | Ulice číslo/popisné
+                            br
+                            | Město, PSČ
+                    // Footer Social Icons
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Telefon
+                        p.lead.mb-0
+                            | +420 604 666 554
+                    // Footer About Text
+                    .col-lg-4
+                        h4.text-uppercase.mb-4 EMail
+                        p.lead.mb-0
+                            a.white(href='mailto:akparizkova@gmail.com') akparizkova@gmail.com
+        // Copyright Section
+        div.copyright.py-4.text-center.text-white
+            .container
+                small Copyright © www.akparizkova.cz 2020
+        // Scroll to Top Button (Only visible on small and extra-small screen sizes)
+        .scroll-to-top.d-lg-none.position-fixed
+            a.js-scroll-trigger.d-block.text-center.text-white.rounded(href='#page-top')
+                i.fa.fa-chevron-up
+
+        // Portfolio Modals
+
+        // Portfolio Modal 1
+        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Trestní právo
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/trestni.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    ul
+                                        li.mx-0.mx-lg-1.text-left komplexní zastoupení, právní poradenství nebo jednotlivé konzultace v trestním řízení nebo účast při dílčích úkonech trestního řízení (výslechy, písemná podání orgánům, apod.)
+                                        li.mx-0.mx-lg-1.text-left obhajoba obviněných či vymáhání nároků poškozených
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+        // Portfolio Modal 2
+        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal2Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Rodinné právo
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/rodinne.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    ul
+                                        li.mx-0.mx-lg-1.text-left právní poradenství nebo jednotlivé konzultace, elektronickou formou či formou osobní schůzky, komplexní zastoupení ve sporném či nesporném řízení nebo účast při dílčích úkonech (písemná podání, účast při jednání u soudu či orgánu péče o děti, apod. )
+                                        li.mx-0.mx-lg-1.text-left zastoupení účastníků při rozvodovém řízení, opatrovnickém řízení (nezletilé děti, omezení svéprávnosti, osvojení, a jiné)  či v řízení o vypořádání společného jmění manželů, v řízení o určení či popření otcovství, a jiné
+                                        li.mx-0.mx-lg-1.text-left zastoupení všech účastníků řízení - rodičů, prarodičů či jiných navrhovatelů - v řízení o výživném, styku či péči
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+        // Portfolio Modal 3
+        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal3Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal3Label Právo nemovitostí
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/nemovitosti.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    ul
+                                        li.mx-0.mx-lg-1.text-left zpracování kompletní smluvní dokumentace,  právní poradenství, konzultace a zpracování odborných právních stanovisek
+                                        li.mx-0.mx-lg-1.text-left smlouvy o převodech nemovitostí (kupní smlouva, darovací smlouva)
+                                        li.mx-0.mx-lg-1.text-left zpracování zástavních smluv a dohod o zřízení věcného břemene
+                                        li.mx-0.mx-lg-1.text-left nájemní smlouvy a smlouvy podnájemní (zpracování nájemních smluv a jejich skončení)
+                                        li.mx-0.mx-lg-1.text-left smlouvy o převodu bytu do vlastnictví člena družstva (zpracování smluv a jejich změn)
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+        // Portfolio Modal 4
+        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal4Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal4Label Občanské právo
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/obcanske.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    ul
+                                        li.mx-0.mx-lg-1.text-left příprava právních rozborů a návrhy řešení specifických situací
+                                        li.mx-0.mx-lg-1.text-left zastupování před úřady
+                                        li.mx-0.mx-lg-1.text-left založení obchodních společností a převody obchodních podílů
+                                        li.mx-0.mx-lg-1.text-left vymáhání pohledávek
+                                        li.mx-0.mx-lg-1.text-left zastoupení dlužníků či věřitelů v insolvenčním řízení, zpracování návrhů na povolení oddlužení, jednání s insolvenčním správcem a soudem
+                                        li.mx-0.mx-lg-1.text-left zastoupení stran v exekučním řízení
+                                        li.mx-0.mx-lg-1.text-left právní pomoc při vytváření svěřenských fondů
+                                        li.mx-0.mx-lg-1.text-left problematika dědictví a souvisejících právních textů (závěť, prohlášení o vydědění, ...)
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+
+        // Team Modals
+
+        // Team Modal 1
+        #teamModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='teamModal1Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#teamModal1Label Mgr. Alena Pařízková, advokátka
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/team/alena.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    p.mb-5.text-left
+                                        | V advokacii působí již od roku 2013 Vlastní advokátní praxi založila v roce 2016. Orientuje se spíše na občanské právo, zejména pak na právo rodinné (rozvody, péče o děti, výživné a další opatrovnické kauzy). Nejen v této oblasti disponuje bohatými zkušenostmi, které si neustále prohlubuje účastí na vzdělávacích akcích pořádaných Českou advokátní komorou. Mgr. Alena Pařízková vyniká v hledání mnohdy i kreativních řešení, která jsou v nejlepším zájmu klienta, v pozitivním přístupu a schopnosti vcítit se do leckdy obtížné životní situace klienta. Nad rámec advokátní činnosti vykonává např. odbornou přednáškovou a konzultační činnost v obecně prospěšné společnosti Elpida.
+                                        br
+                                        br
+                                        | Ve svém volném čase se věnuje převážně rodině, zahraje si tenis, nebo volejbal.
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+        // Team Modal 2
+        #teamModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='teamModal2Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#teamModal2Label Ondřej Najman, paralegal
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/team/ondrej.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    p.mb-5.text-left
+                                        | Aktuálně dokončuje studium na Právnické fakultě Univerzity Karlovy. Po celou dobu svého studia dosahoval nadprůměrných studijních výsledků. V rámci svého působení v advokátní kanceláři se zaměřuje na právo nemovitostí, zpracování nejrůznějších smluvních kontraktů (kupní, darovací smlouvy, smlouvy o advokátní úschově…). Rovněž se věnuje problematice svěřenských fondů. 
+                                        br
+                                        br
+                                        | Ve svém volném čase rád hraje tenis, běhá a věnuje se sbírání vinylových desek od skupiny Depeche Mode. 
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+        // Team Modal 3
+        #teamModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='teamModal3Label', aria-hidden='true')
+            .modal-dialog.modal-xl(role='document')
+                .modal-content
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true')
+                            i.fas.fa-times
+                    .modal-body.text-center
+                        .container
+                            .row.justify-content-center
+                                .col-lg-8
+                                    // Portfolio Modal - Title
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#teamModal3Label Mgr. Marta Fleková, advokátní koncipient
+                                    // Icon Divider
+                                    .divider-custom
+                                        .divider-custom-line
+                                        .divider-custom-icon
+                                            i.fas.fa-star
+                                        .divider-custom-line
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/img/team/marta.jpg', alt='')
+                                    // Portfolio Modal - Text
+                                    p.mb-5.text-left
+                                        | V roce 2020 dokončila magisterské studium na Právnické fakultě Univerzity Karlovy. Téhož roku zde složila rigorózní zkoušku z trestního práva. Během studia působila jako pomocná vědecká síla na katedře trestního práva a účastnila se soutěže v rámci studentské vědecké odborné činnosti. V praxi se zaměřuje především na trestní právo a insolvence, zejména pak na problematiku oddlužení. Vyniká proklientským přístupem a snahou za všech okolností vyhovět zájmům klienta. 
+                                        br
+                                        br
+                                        | Volný čas ráda tráví s přítelem a pejskem, věnuje se pěší turistice a hraní deskových her.
+                                    button.btn.btn-primary(data-dismiss='modal')
+                                        i.fas.fa-times.fa-fw
+                                        | Zavřít
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')

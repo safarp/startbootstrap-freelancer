@@ -1,0 +1,8 @@
+a.white {
+    color: $white;
+    &:focus,
+    &:hover,
+    &:active {
+      color: darken($white, 10%);
+    }
+  }
