@@ -11,7 +11,7 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
-$to = "safar.pavel@gmail.com"; // Add your email address in between the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = "alena.parizkova@akparizkova.cz"; // Add your email address in between the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
 $subject = "[akparizkova.cz] - Kontaktní formulář:  $name";
 $body = "Obrželi jste novou z právu z kontaktního formuláře.\n\n"."Detaily zprávu:\n\nJméno: $name\n\nEmail: $email\n\nTelefon: $phone\n\nZpráva:\n$message";
 $header = "From: noreply@akparizkova.cz\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.

@@ -39,7 +39,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Vaše zpráva byla odeslána. </strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
@@ -55,9 +55,9 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
-                            "Sorry " +
+                            "Omlouváme se " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", vypadá to, že emailový server neodpovídá. Prosím, zkuste to později!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
